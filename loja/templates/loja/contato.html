@@ -1,0 +1,14 @@
+{% extends 'loja/base.html' %}
+{% block conteudo %}
+<h2>Contato para o SAC</h2>
+<p>Funcionalidade demonstrativa. Os dados não serão gravados em tabela.</p>
+<form id="idFrmContatoSac" name="frmContatoSac" class="card p-4 shadow-sm">
+    <div class="mb-3"><label class="form-label">Nome completo</label><input type="text" id="idTxtNomeCompleto" name="nomeCompleto" class="form-control" maxlength="100" required></div>
+    <div class="mb-3"><label class="form-label">E-mail</label><input type="email" id="idTxtEmailContato" name="emailContato" class="form-control" maxlength="100" required></div>
+    <div class="mb-3"><label class="form-label">Telefone</label><input type="text" id="idTxtTelefoneContato" name="telefoneContato" class="form-control" maxlength="11" pattern="[0-9]+" required></div>
+    <div class="mb-3"><label class="form-label">Melhor hora para contato</label><select id="idBSelHoraContato" name="horaContato" class="form-select" required><option value="">Selecione</option><option>Manhã</option><option>Tarde</option><option>Noite</option></select></div>
+    <div class="mb-3"><label class="form-label">Mensagem</label><textarea id="idTxtMensagemContato" name="mensagemContato" class="form-control" maxlength="1024" required></textarea></div>
+    <input type="button" id="idBtnEnviarContato" name="enviarContato" value="Enviar" class="btn btn-success">
+    <input type="reset" id="idBtnLimparContato" name="limparContato" value="Limpar" class="btn btn-secondary mt-2">
+</form>
+{% endblock %}

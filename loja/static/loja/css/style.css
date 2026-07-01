@@ -1,0 +1,4 @@
+body { background-color: #f4f6f8; }
+.navbar-brand { letter-spacing: .5px; }
+.card { border-radius: 12px; }
+footer { position: relative; bottom: 0; width: 100%; }

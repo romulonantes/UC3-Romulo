@@ -1,0 +1,18 @@
+{% extends 'loja/base.html' %}
+{% block conteudo %}
+<h2>Cadastro de Produto</h2>
+<form id="idFrmCadastroProduto" name="frmCadastroProduto" method="post" class="card p-4 shadow-sm">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-md-6 mb-3"><label class="form-label">Nome</label>{{ form.nome }}{{ form.nome.errors }}</div>
+        <div class="col-md-6 mb-3"><label class="form-label">Fabricante</label>{{ form.fabricante }}{{ form.fabricante.errors }}</div>
+        <div class="col-md-6 mb-3"><label class="form-label">Preço de Compra</label>{{ form.preco_compra }}{{ form.preco_compra.errors }}</div>
+        <div class="col-md-6 mb-3"><label class="form-label">Preço de Venda</label>{{ form.preco_venda }}{{ form.preco_venda.errors }}</div>
+        <div class="col-md-6 mb-3"><label class="form-label">Cor</label>{{ form.cor }}{{ form.cor.errors }}</div>
+        <div class="col-md-6 mb-3"><label class="form-label">Data de Fabricação</label>{{ form.data_fabricacao }}{{ form.data_fabricacao.errors }}</div>
+        <div class="col-md-12 mb-3"><label class="form-label">Nome da Imagem</label>{{ form.imagem }}{{ form.imagem.errors }}</div>
+    </div>
+    <input type="submit" id="idBtnSalvarProduto" name="salvarProduto" value="Salvar" class="btn btn-success">
+    <input type="reset" id="idBtnLimparProduto" name="limparProduto" value="Limpar" class="btn btn-secondary mt-2">
+</form>
+{% endblock %}
