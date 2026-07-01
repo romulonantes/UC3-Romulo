@@ -134,5 +134,5 @@ Projeto desenvolvido por **Rômulo Nantes** para a Atividade Avaliativa da Unida
 ---
 
 **Instituição:** Senac RJ  
-**Curso:** Técnico em Desenvolvimento de Sistemas  
+**Curso:** Programação em Python 
 **Framework:** Django
